@@ -313,8 +313,10 @@ etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/init/dpmd.rc
 etc/permissions/com.qti.dpmframework.xml
+etc/permissions/com.qti.location.sdk.xml
 etc/permissions/dpmapi.xml
 framework/com.qti.dpmframework.jar
+framework/com.qti.location.sdk.jar
 framework/dpm.jar
 framework/dpmapi.jar
 framework/tcmclient.jar
