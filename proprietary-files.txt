@@ -318,6 +318,7 @@ framework/com.qti.dpmframework.jar
 framework/dpm.jar
 framework/dpmapi.jar
 framework/tcmclient.jar
+-priv-app/dpmserviceapp/dpmserviceapp.apk|38a760a2ed84a4b00d9c4f5306b85476d0e1df27
 lib/com.qualcomm.qti.dpm.api@1.0.so
 lib/libdiag_system.so
 lib/libdpmctmgr.so
