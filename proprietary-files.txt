@@ -320,7 +320,7 @@ framework/com.qti.location.sdk.jar
 framework/dpm.jar
 framework/dpmapi.jar
 framework/tcmclient.jar
--priv-app/dpmserviceapp/dpmserviceapp.apk|38a760a2ed84a4b00d9c4f5306b85476d0e1df27
+-priv-app/dpmserviceapp/dpmserviceapp.apk|b3e3bdcfa42f2a233ed40e3cab7b404464836f97
 lib/com.qualcomm.qti.dpm.api@1.0.so
 lib/libdiag_system.so
 lib/libdpmctmgr.so
@@ -481,7 +481,7 @@ vendor/firmware/a530v3_seq.fw2
 
 # IMS
 -app/ims/ims.apk|3806a916da8adc1e1787ec45a074a55968a0e752
--app/uceShimService/uceShimService.apk
+-app/uceShimService/uceShimService.apk|108923dc37760d602af9943c52a80543b1d718da
 etc/permissions/com.qualcomm.qti.imscmservice.xml
 etc/permissions/qti-vzw-ims-internal.xml
 framework/com.qualcomm.qti.imscmservice@1.0-java.jar
