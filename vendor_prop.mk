@@ -53,14 +53,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=1
+    persist.vendor.cne.feature=1
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
     persist.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true \
-    ro.use_data_netmgrd=true
+    ro.vendor.use_data_netmgrd=true
 
 # Display (Qualcomm AD)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -123,10 +123,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
     android.telephony.apn-restore=24000 \
     persist.vendor.qti.telephony.vt_cam_interface=1 \
-    persist.radio.sw_mbn_update=1 \
-    persist.radio.sw_mbn_volte=1 \
-    persist.radio.sw_mbn_openmkt=1 \
-    persist.radio.hw_mbn_update=1 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.vendor.radio.custom_ecc=1 \
@@ -136,18 +132,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sw_mbn_volte=1 \
     persist.vendor.radio.sw_mbn_openmkt=1 \
     persist.vendor.radio.hw_mbn_update=1 \
-    persist.radio.primarycard=true \
-    persist.radio.flexmap_type=dds \
     persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.rat_on=combine \
-    persist.radio.nodisplaytext=true \
     persist.vendor.radio.ignore_dom_time=10 \
-    persist.logd.size.radio=2M \
-    persist.radio.data_ltd_sys_ind=1 \
-    persist.radio.multisim.config=dsds \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.radio.apm_sim_not_pwdn=1 \
+    persist.vendor. radio.apm_sim_not_pwdn \
     persist.vendor.radio.sib16_support=1 \
-    persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine
 
 # RmNet Data
