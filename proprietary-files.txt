@@ -342,7 +342,6 @@ vendor/lib64/libqvop-service.so
 vendor/lib/libqvop-service.so
 
 # DPM - from LA.UM.7.2.r1-04000-sdm660.0 - B2N_sprout:9/PPR1.180610.011/00WW_3_22C
-bin/dpm
 bin/dpmd
 etc/dpm/dpm.conf
 etc/init/dpmd.rc
