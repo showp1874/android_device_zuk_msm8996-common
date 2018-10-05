@@ -616,6 +616,10 @@ vendor/lib/libvpplibrary.so|1b74559eeaa6cb55e0dac65b94bae08279098b90
 vendor/lib/libvqzip.so|70451e720fb3d5697cf440432c430e3e39e0ad71
 
 # Perf - from LA.UM.7.2.r1-04000-sdm660.0 - B2N_sprout:9/PPR1.180610.011/00WW_3_22C
+lib64/libqti_performance.so
+lib64/libqti-perfd-client_system.so
+lib/libqti_performance.so
+lib/libqti-perfd-client_system.so
 lib64/vendor.qti.hardware.iop@1.0.so|501927195163a1128abfe0ea8fedf7d15c7c5652
 lib64/vendor.qti.hardware.iop@2.0.so|13a9554d8097e4459692cd71e14c86ce14993415
 lib64/vendor.qti.hardware.perf@1.0.so|de76b041137697356a03fdd28e488b34b6f890e6
