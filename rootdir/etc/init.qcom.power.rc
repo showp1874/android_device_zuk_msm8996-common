@@ -193,7 +193,7 @@ service charger /sbin/chargeonlymode
     group system graphics
     seclabel u:r:charger:s0
 
-service energy-awareness /vendor/bin/energy-awareness
+service vendor.energy-awareness /vendor/bin/energy-awareness
     class main
     user root
     group system
