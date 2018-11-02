@@ -69,4 +69,12 @@ BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/msm8996-common/proprietary
 # Patch blobs for VNDK
 sed -i "s|libgui.so|libfui.so|g" "$BLOB_ROOT"/vendor/lib/libmmcamera_ppeiscore.so
 
+#
+# Hax libaudcal.so to store acdbdata in new path
+#
+sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" \
+    "$BLOB_ROOT"/vendor/lib/libaudcal.so
+sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" \
+    "$BLOB_ROOT"/vendor/lib64/libaudcal.so
+
 "$MY_DIR"/setup-makefiles.sh
