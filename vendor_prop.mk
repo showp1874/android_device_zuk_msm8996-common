@@ -85,20 +85,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
+    debug.gralloc.enable_fb_ubwc=1 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     persist.hwc.enable_vds=1 \
     persist.sys.wfd.virtual=0 \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=480 \
-    vendor.display.disable_rotator_downscale=1 \
-    vendor.display.disable_skip_validate=1 \
-    vendor.gralloc.enable_fb_ubwc=1
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.nohdcp=1 \
+    debug.sf.enable_hwc_vds=1 \
+    vendor.gralloc.disable_wb_ubwc=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.vidc.enc.disable.pq=true \
     vidc.enc.dcvs.extra-buff-count=2
 
 # Memory optimizations
