@@ -116,7 +116,7 @@ vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so|95d78291dbd25e251ebcc3b4391102a9f7a5be7b
 vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_modules.so|24ea47181049feda8df6c0471d2556984a379e09
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
@@ -146,7 +146,7 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmpbase.so
+vendor/lib/libmpbase.so|56e65e43d4ae625d209204b0c88ef27c4e3a4a5d
 vendor/lib/libmorpho_image_stab4.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_jpegdec.so
@@ -245,6 +245,9 @@ vendor/lib/libchromatix_ov8865_snapshot.so
 vendor/lib/libchromatix_ov8865_video_full.so
 vendor/lib/libchromatix_ov8865_zsl_preview.so
 vendor/lib/libchromatix_ov8865_zsl_video.so
+
+# Camera vndk hax - from Lineage 16.0 build
+vendor/lib/libfui.so|21d012ec9dabe6e62e023780eac1e3a476eb298e
 
 # CNE - from LA.UM.7.6.r1-02800-89xx.0 - daisy 9/PKQ1.180917.001/V10.0.1.0PDLMIFJ
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
