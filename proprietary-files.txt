@@ -95,7 +95,7 @@ lib64/libclearsight.so:vendor/lib64/libclearsight.so
 lib64/libfiltergenerator.so:vendor/lib64/libfiltergenerator.so
 lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
 lib64/libts_face_beautify_hal.so:vendor/lib64/libts_face_beautify_hal.so
-vendor/bin/mm-qcamera-daemon
+vendor/bin/mm-qcamera-daemon|9fb4f47ddd1e5a6c69b26e1b76d30c6f030cbd55
 vendor/lib/libchromaflash.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
@@ -116,7 +116,7 @@ vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so|95d78291dbd25e251ebcc3b4391102a9f7a5be7b
 vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so|24ea47181049feda8df6c0471d2556984a379e09
+vendor/lib/libmmcamera2_stats_modules.so|e24fd2d973a790e2b1c2a8a6d147a9f6f71cad75
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
@@ -248,6 +248,8 @@ vendor/lib/libchromatix_ov8865_zsl_video.so
 
 # Camera vndk hax - from Lineage 16.0 build
 vendor/lib/libfui.so|21d012ec9dabe6e62e023780eac1e3a476eb298e
+vendor/lib/libfinder.so|42232c482c6bb6c5c47aaa609c4e1ca69dd2798d
+vendor/lib/libfutils.so|12e4c03f62a8780cfd0d3e76176dcb718d391ddb
 
 # CNE - from LA.UM.7.6.r1-02800-89xx.0 - daisy 9/PKQ1.180917.001/V10.0.1.0PDLMIFJ
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
