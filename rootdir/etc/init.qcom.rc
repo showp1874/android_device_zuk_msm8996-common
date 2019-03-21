@@ -165,6 +165,14 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    # Create PERFD deamon related dirs
+    mkdir /data/vendor/perfd 0770 root system
+    chmod 2770 /data/vendor/perfd
+    rm /data/vendor/perfd/default_values
+
+    # Create IOP  deamon related dirs
+    mkdir /data/vendor/iop 0770 root system
+
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
     chown radio radio /data/vendor/radio/copy_complete
@@ -177,14 +185,6 @@ on post-fs-data
     write /data/vendor/radio/db_check_done 0
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
-
-    # Setup permission for powerHAL
-    chown system system /dev/stune/top-app/schedtune.boost
-    chown system system /dev/cpu_dma_latency
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq
 
 on early-boot
     # Set RLIMIT_MEMLOCK to 64MB
@@ -380,13 +380,6 @@ service vendor.rmt_storage /vendor/bin/rmt_storage
 service vendor.tftp_server /vendor/bin/tftp_server
     class core
     user root
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
-    socket msm_irqbalance seqpacket 660 root system
-    class core
-    user root
-    group root
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
