@@ -13,8 +13,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.zuk_8996",
-    init_rc: ["vendor.lineage.touch@1.0-service.zuk_8996.rc"],
+    name: "vendor.mokee.touch@1.0-service.zuk_8996",
+    init_rc: ["vendor.mokee.touch@1.0-service.zuk_8996.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,
@@ -27,7 +27,7 @@ cc_binary {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.mokee.touch@1.0",
     ],
     header_libs: [
         "libbinder_headers",
