@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.mokee.settings.device;
 
-import org.lineageos.internal.util.FileUtils;
+import org.mokee.internal.util.FileUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +34,7 @@ public class Constants {
     // Nodes
     public static final String FP_WAKEUP_NODE = "/sys/devices/soc/soc:fpc1020/enable_wakeup";
     // Intents
-    public static final String CUST_INTENT = "org.lineageos.settings.device.CUST_UPDATE";
+    public static final String CUST_INTENT = "org.mokee.settings.device.CUST_UPDATE";
     public static final String CUST_INTENT_EXTRA = "pocketmode_service";
 
     // Holds <preference_key> -> <proc_node> mapping

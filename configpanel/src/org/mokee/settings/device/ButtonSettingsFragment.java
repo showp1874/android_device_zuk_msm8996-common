@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.mokee.settings.device;
 
 import android.app.ActionBar;
 import android.content.SharedPreferences;
@@ -30,8 +30,8 @@ import android.support.v7.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import org.lineageos.internal.util.FileUtils;
-import org.lineageos.internal.util.PackageManagerUtils;
+import org.mokee.internal.util.FileUtils;
+import org.mokee.internal.util.PackageManagerUtils;
 
 public class ButtonSettingsFragment extends PreferenceFragment
         implements OnPreferenceChangeListener {
@@ -110,15 +110,10 @@ public class ButtonSettingsFragment extends PreferenceFragment
                 (PreferenceCategory) getPreferenceScreen().findPreference(Constants.CATEGORY_FP);
 
         SwitchPreference b = (SwitchPreference) findPreference(Constants.FP_POCKETMODE_KEY);
-        if (!PackageManagerUtils.isAppInstalled(getContext(), "org.lineageos.pocketmode")) {
+        if (!PackageManagerUtils.isAppInstalled(getContext(), "org.mokee.pocketmode")) {
             fingerprintCategory.removePreference(b);
         } else {
             b.setOnPreferenceChangeListener(this);
-        }
-
-        // Hide fingerprint features if the device doesn't support them
-        if (!FileUtils.fileExists(Constants.FP_WAKEUP_NODE)) {
-            getPreferenceScreen().removePreference(fingerprintCategory);
         }
     }
 
